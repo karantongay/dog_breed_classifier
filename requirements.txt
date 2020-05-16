@@ -55,5 +55,5 @@ simplegeneric==0.8.1
 six==1.10.0
 traitlets==4.3.3
 wcwidth==0.1.8
-Werkzeug==0.10.4
+Werkzeug==0.15.3
 WTForms==2.1
