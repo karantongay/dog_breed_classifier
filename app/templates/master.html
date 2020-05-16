@@ -18,7 +18,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">Disaster Response Project</a>
+            <a class="navbar-brand" href="/">Dog Breed Identifier</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -32,8 +32,8 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1 class="text-center">Disaster Response Project</h1>
-        <p class="text-center">Analyzing message data for disaster response</p>
+        <h1 class="text-center">Dog Breed Identifier</h1>
+        <p class="text-center">Please only upload the dog images</p>
         <hr />
       
         <div class="row">
@@ -41,36 +41,12 @@
                 <form action="/go" method="post" enctype="multipart/form-data">
                     <div class="col-lg-offset-5">
                         <input type="file" id="myFile" name="file"> <br>
-                        <input type="submit" class="btn btn-lg btn-success">
+                        <input type="submit" class="btn btn-lg btn-success" id="submit-button">
                     </div>
                 </form>
             </div>
         </div>
-
-        {% block message %}
-        {% endblock %}
     </div>
 </div>
-
-<div class="container">
-    {% block content %}
-        <div class="page-header">
-            <h1 class="text-center">Overview of Training Dataset</h1>
-        </div>
-    {% endblock %}
-
-    {% for id in ids %}
-        <div id="{{id}}"></div>
-    {% endfor %}
-</div>
-
-<script type="text/javascript">
-    const graphs = {{graphJSON | safe}};
-    const ids = {{ids | safe}};
-    for(let i in graphs) {
-        Plotly.plot(ids[i], graphs[i].data, graphs[i].layout);
-    }
-</script>
-  
 </body>
 </html>
