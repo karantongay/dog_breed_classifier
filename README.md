@@ -10,4 +10,4 @@ To install it on your system please install the dependencies from requirements.t
 ![title](images/image1.JPG) \
 
 ## Classification Results
-![title](images/image21.JPG)
+![title](images/image2.JPG)
