@@ -7,7 +7,7 @@ To install it on your system please install the dependencies from requirements.t
 # Screenshots:
 
 ## Image Upload
-![title](images/image1.png) \
+![title](images/image1.JPG) \
 
 ## Classification Results
-![title](images/image21.png)
+![title](images/image21.JPG)
